@@ -90,11 +90,9 @@ python -m pytest tests -q
 ### 📥 From the Repository
 
 ```bash
-git clone https://github.com/MamadXV/zipbomb.git
+git clone [https://github.com/MamadXV/zipbomb.git](https://github.com/MamadXV/zbomb.git)
 cd zipbomb
 pip install .
-# or development (editable) install:
-pip install -e ".[dev]"
 ```
 
 ## *Created with 💖 by Xv.*
