@@ -1,0 +1,369 @@
+/* ZipBomb Lab (zbomb) - made by Xv - github.com/MamadXV */
+/* Zip Bomb Lab - dark black + white + orange. */
+Screen {
+    background: #000000;
+    color: #FFFFFF;
+}
+AppHeader {
+    dock: top;
+    height: 1;
+    background: #0A0A0A;
+    color: #777777;
+    padding: 0 1;
+}
+StatusBar {
+    dock: bottom;
+    height: 1;
+    background: #0A0A0A;
+    color: #777777;
+    padding: 0 1;
+}
+KeyBar {
+    dock: bottom;
+    height: 1;
+    background: #000000;
+    color: #3A3A3A;
+    padding: 0 1;
+}
+#body {
+    height: 1fr;
+    padding: 1 2;
+    overflow-y: auto;
+}
+/* -- shared screen chrome ---------------------------------------------- */
+.title {
+    color: #FF6B00;
+    text-style: bold;
+}
+.tagline {
+    color: #777777;
+    margin-bottom: 1;
+}
+/* -- home -------------------------------------------------------------- */
+HomeScreen .path {
+    color: #777777;
+}
+.split {
+    width: 1fr;
+    height: auto;
+}
+#actions {
+    width: 1fr;
+    height: auto;
+    margin-top: 1;
+    margin-right: 1;
+    border: round #1A1A1A;
+    background: #0A0A0A;
+}
+#actions > .option-list--option {
+    color: #FFFFFF;
+    background: #0A0A0A;
+    padding: 0 1;
+}
+#actions > .option-list--option-highlighted {
+    background: #FF6B00;
+    color: #000000;
+}
+#actions > .option-list--option-hover {
+    background: #1F1F1F;
+    color: #FFFFFF;
+}
+#actions > .option-list--option-disabled {
+    color: #FF6B00;
+    background: #0A0A0A;
+    text-style: bold;
+}
+#actions > .option-list--separator {
+    color: #333333;
+    background: #0A0A0A;
+}
+#home-detail {
+    width: 38;
+    margin-top: 1;
+}
+#detail-body {
+    color: #C8C8C8;
+}
+/* -- content cards (about, help) ---------------------------------------- */
+.card {
+    height: auto;
+    margin-bottom: 1;
+    padding: 0 2;
+    border: round #1A1A1A;
+    background: #0A0A0A;
+    color: #FFFFFF;
+}
+.card.-hero {
+    border: round #FF6B00;
+    background: #0D0700;
+}
+.card.-warn {
+    border: round #CC5500;
+    background: #140A00;
+}
+.card .heading {
+    color: #FF6B00;
+    text-style: bold;
+    margin-bottom: 1;
+}
+.card.-hero .heading {
+    margin-bottom: 0;
+}
+.card.-warn .heading {
+    color: #FF8C33;
+}
+/* -- forms ------------------------------------------------------------- */
+.field-row {
+    height: 3;
+}
+.field-label {
+    width: 22;
+    color: #777777;
+    content-align-vertical: middle;
+    padding-top: 1;
+}
+Input, Select {
+    width: 1fr;
+}
+Checkbox {
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #FFFFFF;
+    margin-bottom: 1;
+}
+Checkbox > .toggle--button {
+    background: #1A1A1A;
+    color: #777777;
+}
+Checkbox.-on > .toggle--button {
+    background: #FF6B00;
+    color: #000000;
+    text-style: bold;
+}
+Checkbox > .toggle--label {
+    background: transparent;
+    color: #FFFFFF;
+}
+Checkbox:hover > .toggle--label {
+    color: #FF8C33;
+}
+Checkbox:focus {
+    border: none;
+    background: transparent;
+}
+Checkbox:focus > .toggle--label {
+    background: #FF6B00;
+    color: #000000;
+    text-style: bold;
+}
+.buttons {
+    height: 3;
+    margin-top: 1;
+}
+Button {
+    width: auto;
+    height: 3;
+    margin-right: 2;
+    background: #141414;
+    color: #FFFFFF;
+    border: tall #333333;
+    text-align: center;
+    text-style: none;
+}
+Button:hover {
+    background: #1F1F1F;
+    border: tall #5A5A5A;
+}
+Button:focus {
+    border: tall #FF6B00;
+    color: #FF6B00;
+    text-style: bold;
+}
+Button:disabled {
+    background: #0A0A0A;
+    border: tall #1A1A1A;
+    color: #555555;
+}
+Button.-primary {
+    background: #FF6B00;
+    color: #000000;
+    border: tall #FF6B00;
+    text-style: bold;
+}
+Button.-primary:hover {
+    background: #FF8C33;
+    border: tall #FF8C33;
+    color: #000000;
+}
+Button.-primary:focus {
+    background: #FF6B00;
+    border: tall #FFFFFF;
+    color: #000000;
+    text-style: bold;
+}
+Button.-error {
+    background: #CC5500;
+    color: #FFFFFF;
+    border: tall #CC5500;
+    text-style: bold;
+}
+Button.-error:hover {
+    background: #E06600;
+    border: tall #E06600;
+    color: #FFFFFF;
+}
+Button.-error:focus {
+    background: #CC5500;
+    border: tall #FFFFFF;
+    color: #FFFFFF;
+    text-style: bold;
+}
+/* -- preview / results ------------------------------------------------- */
+.preview {
+    border: round #1A1A1A;
+    padding: 1 2;
+    height: auto;
+    margin-top: 1;
+}
+.preview .headline {
+    color: #FF6B00;
+    text-style: bold;
+}
+.preview .metric {
+    color: #FFFFFF;
+}
+.preview .warn {
+    color: #FF8C33;
+}
+.preview .danger {
+    color: #CC5500;
+}
+.preview .muted {
+    color: #777777;
+}
+.result-ok {
+    color: #FF8C33;
+    text-style: bold;
+}
+.result-bad {
+    color: #CC5500;
+    text-style: bold;
+}
+/* -- progress ---------------------------------------------------------- */
+ProgressBar {
+    width: 1fr;
+    margin: 1 0;
+}
+ProgressBar > .bar--bar {
+    color: #FF6B00;
+}
+/* -- tables ------------------------------------------------------------ */
+DataTable {
+    height: 1fr;
+}
+.card DataTable {
+    height: auto;
+}
+DataTable > .datatable--header {
+    background: #1A1A1A;
+    color: #FF6B00;
+    text-style: bold;
+}
+DataTable > .datatable--header-cursor,
+DataTable > .datatable--header-hover {
+    background: #262626;
+    color: #FF8C33;
+    text-style: bold;
+}
+DataTable > .datatable--even-row {
+    background: #141414;
+}
+DataTable > .datatable--hover {
+    background: #1F1F1F;
+}
+DataTable > .datatable--cursor {
+    background: #262626;
+    color: #FFFFFF;
+}
+DataTable:focus > .datatable--cursor {
+    background: #FF6B00;
+    color: #000000;
+    text-style: bold;
+}
+/* -- help -------------------------------------------------------------- */
+#help-search {
+    margin-bottom: 1;
+}
+/* -- select dropdowns --------------------------------------------------- */
+Select > SelectCurrent {
+    border: tall #1A1A1A;
+    background: #0A0A0A;
+    color: #FFFFFF;
+}
+Select > SelectCurrent:focus {
+    border: tall #FF6B00;
+}
+Select > SelectCurrent .arrow {
+    color: #FF6B00;
+}
+Select > SelectCurrent #label {
+    color: #C8C8C8;
+}
+Select > SelectOverlay {
+    background: #0A0A0A;
+    border: round #1A1A1A;
+    color: #FFFFFF;
+    padding: 0 1;
+}
+Select > SelectOverlay > .option-list--option {
+    color: #FFFFFF;
+    background: #0A0A0A;
+}
+Select > SelectOverlay > .option-list--option-highlighted {
+    background: #FF6B00;
+    color: #000000;
+}
+Select > SelectOverlay > .option-list--option-hover {
+    background: #1F1F1F;
+    color: #FFFFFF;
+}
+/* -- dialogs ----------------------------------------------------------- */
+ConfirmDialog, ErrorDialog {
+    align: center middle;
+}
+.modal {
+    width: 64;
+    max-width: 90%;
+    height: auto;
+    border: round #FF6B00;
+    background: #0A0A0A;
+    padding: 1 2;
+}
+.modal .headline {
+    color: #FF6B00;
+    text-style: bold;
+    margin-bottom: 1;
+}
+.modal .detail {
+    color: #777777;
+    margin-bottom: 1;
+}
+/* -- narrow terminals -------------------------------------------------- */
+Screen.-narrow #body {
+    padding: 0 1;
+}
+Screen.-narrow .field-label {
+    width: 14;
+}
+Screen.-narrow .modal {
+    width: 100%;
+}
+Screen.-narrow #home-detail {
+    display: none;
+}
+Screen.-narrow #actions {
+    margin-right: 0;
+}
