@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active%20%26%20Published-brightgreen?style=for-the-badge)](https://pypi.org/project/zbomb/)
 
-### [🇺🇸 English](#-english-version) | [🇮🇷 فارسی](#-نسخه-فارسی)
+### [🇺🇸 English](#-english-version)
 
 ---
 
@@ -99,96 +99,3 @@ pip install -e ".[dev]"
 
 ## *Created with 💖 by Xv.*
 
----
-
-## 🇮🇷 نسخه فارسی
-
-به **ZipBomb Lab (`zbomb`)** خوش اومدی! یه لابراتوار امن برای ساخت، اندازه‌گیری و تشخیص بمب‌های فشرده‌سازی روی هر سخت‌افزاری.
-
-> **⚠️ توجه مهم:** این ابزار جهت پژوهش و آموزش طراحی شده. فورک‌های این پروژه **باید کردیت کامل** رو برای توسعه‌دهنده اصلی (**Xv**) حفظ کنن. کپی‌های ویرایش‌شده یا بدون کردیت اجرا نمی‌شن. استفاده از این نرم‌افزار به مسئولیت خود شماست.
-
-### 🚀 راهنمای نصب سریع
-
-```bash
-# ۱. نصب از پای‌پی
-pip install zbomb
-
-# یا نصب ایزوله با pipx:
-pipx install zbomb
-
-# ۲. بررسی نصب
-zbomb version
-
-# ۳. ساخت یک بمب کوچک و اسکن مجدد
-zbomb create -s 16MiB
-```
-
-### ✨ امکانات و قابلیت‌ها
-
-- 🔬 **ساخت بمب** — ساخت بمب فشرده‌سازی در هر اندازه دلخواه
-- 📏 **تخمین انبساط** — دیدن برنامه واقعی انبساط قبل از ساخت
-- 🔍 **بازرسی آرشیو** — اسکن هر فایل ZIP با قابلیت تحلیل عمیق (`--deep`)
-- 📋 **رسپی‌ها و متدها** — نقشه‌های آماده و مقایسه روش‌های فشرده‌سازی
-- 🖥️ **پنل تعاملی و TUI** — منوهای راهنما با تخمین زنده
-- 🎨 **تم‌های رنگی** — چندین تم رنگی مختلف
-- 🔐 **سیاست ایمنی** — محدودیت‌های هوشمندانه برای پژوهش مسئولانه
-
-### 📸 تصاویر برنامه
-
-<p align="center">
-  <img src="Images/1.png" alt="ZipBomb Lab - صفحه اصلی" width="780">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="Images/2.png" alt="ZipBomb Lab - ساخت" width="780">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="Images/3.png" alt="ZipBomb Lab - پنل" width="780">
-</p>
-
-### 🛠️ فهرست دستورات
-
-| دستور | توضیح |
-| --- | --- |
-| 🔬 `zbomb create` | ساخت بمب فشرده‌سازی و اسکن مجدد |
-| 📏 `zbomb estimate` | تخمین انبساط برای اندازه هدف |
-| 🔍 `zbomb inspect` | بررسی آرشیو از نظر بمب فشرده‌سازی |
-| 📋 `zbomb recipes` | رسپی‌های آماده بمب |
-| ⚙️ `zbomb methods` | مقایسه روش‌های فشرده‌سازی |
-| 🖥️ `zbomb panel` | پنل تعاملی راهنما |
-| 🎨 `zbomb theme` | تغییر تم رنگی |
-| 🧪 `zbomb demo` | اجرای دموی کامل |
-| 🔐 `zbomb policy` | مشاهده سیاست ایمنی |
-| 📦 `zbomb version` | نمایش نسخه + واترمارک نویسنده |
-
-برای مشاهده کامل دستورات: `zbomb --help`
-
-### 📋 پیش‌نیازها
-
-- پایتون **نسخه ۳.۹ به بالا**
-- `rich>=13` و `textual>=8` (به‌صورت خودکار توسط pip نصب می‌شن)
-
-### 🧪 اجرای تست‌ها
-
-```bash
-python -m pytest tests -q
-```
-
-### 📥 نصب از مخزن گیت‌هاب
-
-```bash
-git clone https://github.com/MamadXV/zipbomb.git
-cd zipbomb
-pip install .
-# یا نصب توسعه (editable):
-pip install -e ".[dev]"
-```
-
----
-
-*ساخته شده با 💖 توسط Xv.*
